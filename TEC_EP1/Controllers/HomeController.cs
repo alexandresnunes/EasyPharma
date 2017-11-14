@@ -14,14 +14,12 @@ namespace TEC_EP1.Controllers
         {
             using (var ctx = new EasyPharmaDbContext())
             {
-                var medicine = new Medicine() {
-                    EAN = "010101",
-                    Description = "Galvus",
-                    Composition = "100 mg"
+                var lab = new Laboratory() {
+                    Name = "Novartis",
             
                 };
 
-                ctx.Medicines.Add(medicine);
+                ctx.Laboratories.Add(lab);
                 ctx.SaveChanges();
 
             }
