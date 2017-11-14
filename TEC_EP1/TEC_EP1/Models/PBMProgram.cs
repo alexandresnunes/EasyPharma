@@ -19,7 +19,7 @@ namespace TEC_EP1.Models
         public int IdPBM { get; set; }
 
         public virtual ICollection<PBMProgramMedicine> PBMProgramMedicines { get; set; }
-
+        //teste
         [ForeignKey("IdPBM")]
         public virtual PBM PBMs { get; set; }
     }
