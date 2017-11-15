@@ -1,0 +1,58 @@
+﻿@model TEC_EP1.Models.PBMProgramMedicine
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>PBMProgramMedicine</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Medicines.EAN)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Medicines.EAN)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PBMPrograms.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PBMPrograms.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PercDescPF)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PercDescPF)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PercDescPMC)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PercDescPMC)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ExtraInfo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ExtraInfo)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

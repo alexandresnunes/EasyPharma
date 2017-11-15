@@ -1,0 +1,42 @@
+﻿@model TEC_EP1.Models.TaxByState
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>TaxByState</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.States.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.States.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PF)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PF)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PMC)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PMC)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

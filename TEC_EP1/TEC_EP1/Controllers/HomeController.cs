@@ -12,17 +12,7 @@ namespace TEC_EP1.Controllers
     {
         public ActionResult Index()
         {
-            using (var ctx = new EasyPharmaDbContext())
-            {
-                var lab = new Laboratory() {
-                    Name = "Novartis",
             
-                };
-
-                ctx.Laboratories.Add(lab);
-                ctx.SaveChanges();
-
-            }
             return View();
         }
 

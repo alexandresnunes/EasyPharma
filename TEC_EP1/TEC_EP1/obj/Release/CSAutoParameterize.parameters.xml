@@ -1,2 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<parameters />
+<parameters>
+  <parameter name="EasyPharmaConnection-Web.config Connection String" description="EasyPharmaConnection Connection String used in web.config by the application to access the database." defaultValue="Server=tcp:tecep.database.windows.net,1433;Initial Catalog=easypharmadb;Persist Security Info=False;User ID=eptec;Password=@Atividade8;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Desktop-CS\\source\\repos\\TEC_EP1\\TEC_EP1\\TEC_EP1\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='EasyPharmaConnection']/@connectionString" />
+  </parameter>
+</parameters>
